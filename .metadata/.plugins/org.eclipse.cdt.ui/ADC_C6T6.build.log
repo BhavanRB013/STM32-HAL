@@ -1,0 +1,10 @@
+21:28:32 **** Incremental Build of configuration Debug for project ADC_C6T6 ****
+make -j12 all 
+arm-none-eabi-size  ADC_C6T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7656	     12	   1620	   9288	   2448	ADC_C6T6.elf
+Finished building: default.size.stdout
+ 
+
+21:28:32 Build Finished. 0 errors, 0 warnings. (took 285ms)
+

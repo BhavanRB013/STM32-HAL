@@ -1,0 +1,11 @@
+PWM USING HAL
+
+	1. create new project and select STM32F407ZET
+	2. in configuration go to system core -> sys -> serial wire
+						rcc -> crystal/ceramic 
+	3. in clock configuration give input frequency as 8 ->HSE ->PLLCLK
+-> 168 IN HCLK -> APB1 AS 42
+	4. in categories -> timers -> TIM14 -> activated -> PWM CHANNEL CH1
+-> prescalar as 419 (420) -> mode as PWM mode 2
+	5. save it and generate the code
+	6. in main file write down the code for pwm

@@ -1,0 +1,9 @@
+../Core/Src/main.c:75:10:CAP_Readfrequency	1
+../Core/Src/main.c:85:10:CAP_Readduty	1
+../Core/Src/main.c:101:5:main	1
+../Core/Src/main.c:159:6:SystemClock_Config	3
+../Core/Src/main.c:205:13:MX_TIM12_Init	7
+../Core/Src/main.c:271:13:MX_TIM14_Init	4
+../Core/Src/main.c:317:13:MX_GPIO_Init	1
+../Core/Src/main.c:334:6:HAL_TIM_IC_CaptureCallback	2
+../Core/Src/main.c:349:6:Error_Handler	1

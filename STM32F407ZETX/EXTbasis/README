@@ -1,0 +1,24 @@
+EXTI USING HAL
+
+STM32F407ZGTX
+
+In the configuration setup
+	1. setting PF9 & PF10 as GPIO output. Built in led reference from schematic
+	2. setting PE3 & PE4 as GPIO EXT3 & EXT4 as external interrupt 
+
+	3. in categories system core -> GPIO -> modify the gpio
+		I) for button select falling edge trigger and pull up. give some user label
+		II)for led select HIGH as output level and leave as it is with a label
+	4. system core -> NVIC -> to set priority for external interrupt
+		I) 0 is the highest priority
+		II) giving EXTI4 as high priority than EXTI3
+	5. save it and generate code
+
+In Project
+	1. core -> source -> main.c
+	2. refer the GPIO info from Drivers -> STM32F4xx_HAL_DRIVER -> src -> gpio.c
+	3. we write our main code inside a callback function not in while() as whenever an external interrupt occurs
+the function get called.
+	4. There is a little problem as due to switch press the pulse consider we pressed for two or more times due to the speed of 
+the device due to this in gpio.c we change the order of IRQHandler function. 1st - callback 2nd - clear_it
+	5. save it and build the project 
