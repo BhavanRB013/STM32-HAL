@@ -1,0 +1,10 @@
+21:18:25 **** Incremental Build of configuration Debug for project BUZZER_C6T6 ****
+make -j12 all 
+arm-none-eabi-size  BUZZER_C6T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4600	     12	   1572	   6184	   1828	BUZZER_C6T6.elf
+Finished building: default.size.stdout
+ 
+
+21:18:25 Build Finished. 0 errors, 0 warnings. (took 171ms)
+

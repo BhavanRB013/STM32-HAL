@@ -1,0 +1,10 @@
+23:03:22 **** Incremental Build of configuration Debug for project LDR_C6T6 ****
+make -j12 all 
+arm-none-eabi-size  LDR_C6T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7732	     12	   1620	   9364	   2494	LDR_C6T6.elf
+Finished building: default.size.stdout
+ 
+
+23:03:23 Build Finished. 0 errors, 0 warnings. (took 180ms)
+
