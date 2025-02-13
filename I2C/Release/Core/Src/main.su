@@ -1,0 +1,6 @@
+../Core/Src/main.c:62:6:BMP_Readcalibration	40	static
+../Core/Src/main.c:72:9:Read_temperature	32	static
+../Core/Src/main.c:84:7:BMP_in_celsius	8	static
+../Core/Src/main.c:162:6:SystemClock_Config	72	static,ignoring_inline_asm
+../Core/Src/main.c:107:5:main	24	static,ignoring_inline_asm
+../Core/Src/main.c:255:6:Error_Handler	0	static,ignoring_inline_asm
